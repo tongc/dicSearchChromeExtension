@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "DIC",
+  "description": "very very basic, context menu and open new tab to dic page",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "ciba.png"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "bk.js"
+    ]
+  },
+  "omnibox": {
+    "keyword": "todo"
+  },
+  "icons": {
+    "16": "ciba.png",
+    "32": "ciba.png",
+    "48": "ciba.png",
+    "128": "ciba.png"
+  },
+  "permissions": [
+    "http://*/",
+    "https://*/",
+    "tabs",
+    "storage",
+    "unlimitedStorage",
+    "contextMenus"
+  ],
+  "web_accessible_resources": [
+    "*.map"
+  ]
+}
